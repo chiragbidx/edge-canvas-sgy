@@ -3,61 +3,201 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Panda Agency - Creative Solutions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Panda Agency</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#work">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
 
-    <div class="container my-5">
-      <h1>Hello, world!</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">You've successfully loaded up the Bootstrap starter example. It includes <a href="https://getbootstrap.com/">Bootstrap 5</a> via the <a href="https://www.jsdelivr.com/package/npm/bootstrap">jsDelivr CDN</a> and includes an additional CSS and JS file for your own code.</p>
-        <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-        <hr class="col-1 my-4">
-
-        <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-        <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
+    <!-- Hero Section -->
+    <header id="hero" class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Unleash Your Brand's Potential</h1>
+        <p class="lead mb-4">Full-service creative agency delivering impactful digital experiences for ambitious businesses.</p>
+        <a href="#contact" class="btn btn-light btn-lg me-2">Get Started</a>
+        <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
       </div>
-    </div>
+    </header>
 
+    <!-- About / Services Section -->
+    <section id="services" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-7">
+            <h2 class="fw-bold mb-3">What We Do</h2>
+            <p class="fs-5">Panda Agency crafts tailored solutions for brands looking to stand out. From digital strategy to polished execution, we turn your vision into results with a blend of creativity, technology, and expertise.</p>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Creative office team at work">
+          </div>
+        </div>
+        <div class="row text-center pt-4">
+          <div class="col-md-4 mb-4">
+            <div class="h-100 p-4 border rounded-3">
+              <span class="fs-1 mb-3 d-block text-primary"><i class="bi bi-tools"></i></span>
+              <h3 class="h5 mb-2">Branding & Identity</h3>
+              <p>Crafting memorable brand experiences, logos, and visual identities.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="h-100 p-4 border rounded-3">
+              <span class="fs-1 mb-3 d-block text-primary"><i class="bi bi-laptop"></i></span>
+              <h3 class="h5 mb-2">Web Development</h3>
+              <p>Designing and developing modern, responsive websites and apps.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="h-100 p-4 border rounded-3">
+              <span class="fs-1 mb-3 d-block text-primary"><i class="bi bi-bullseye"></i></span>
+              <h3 class="h5 mb-2">Digital Marketing</h3>
+              <p>Growing your audience with campaigns, content, and analytics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Selected Projects</h2>
+          <p class="fs-5">A showcase of brands we've empowered to new heights.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Elegant website project screenshot">
+              <div class="card-body">
+                <h5 class="card-title">Elegant Retail Web</h5>
+                <p class="card-text">A modern ecommerce platform built for maximum engagement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mobile app design preview">
+              <div class="card-body">
+                <h5 class="card-title">Mobile App UX</h5>
+                <p class="card-text">Intuitive, dynamic app interfaces that users love to interact with.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Branding for a local business">
+              <div class="card-body">
+                <h5 class="card-title">Rebrand Success</h5>
+                <p class="card-text">Transforming a local business's image through eye-catching design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Clients Say</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-4">
+            <blockquote class="blockquote p-4 border rounded shadow-sm">
+              <p class="mb-4 fs-5"><em>“The Panda Agency team over-delivered on every promise. Our new website tripled our leads!”</em></p>
+              <footer class="blockquote-footer">Jamie Lee, <cite title="TechCorp">TechCorp</cite></footer>
+            </blockquote>
+          </div>
+          <div class="col-md-6 mb-4">
+            <blockquote class="blockquote p-4 border rounded shadow-sm">
+              <p class="mb-4 fs-5"><em>“A truly creative group—the rebranding helped us launch a new era for our company.”</em></p>
+              <footer class="blockquote-footer">Morgan Smith, <cite title="Finwise">Finwise</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-3">Let's Work Together</h2>
+            <p class="fs-5">Ready to elevate your brand? Contact us for a free consultation or to discuss your next project. We respond within 24 hours.</p>
+            <ul class="list-unstyled fs-6 mt-3">
+              <li><strong>Email:</strong> <a href="mailto:hello@pandaagency.com">hello@pandaagency.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></li>
+              <li><strong>Location:</strong> 123 Main Street, Suite 456, Cityville</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <form class="p-4 border rounded bg-white shadow-sm" aria-label="Contact form">
+              <div class="mb-3">
+                <label for="contact-name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <label for="contact-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea class="form-control" id="contact-message" rows="4" placeholder="How can we help?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-2">&copy; 2024 Panda Agency. All rights reserved.</p>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#hero" class="text-white text-decoration-underline">Home</a></li>
+          <li class="list-inline-item"><a href="#services" class="text-white text-decoration-underline">Services</a></li>
+          <li class="list-inline-item"><a href="#work" class="text-white text-decoration-underline">Portfolio</a></li>
+          <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-underline">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons (for service cards) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Bootstrap and Custom JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
