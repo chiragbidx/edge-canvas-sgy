@@ -5,3 +5,20 @@
 :root {
   --bs-body-bg: var(--bs-gray-100);
 }
+
+#hero {
+  background: linear-gradient(95deg, #4191ee 30%, #56c6ba 100%);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 240px;
+}
+
+.section {
+  scroll-margin-top: 75px;
+}
+/* Optional: Slight shadow effect for forms and cards */
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.08)!important;
+}
